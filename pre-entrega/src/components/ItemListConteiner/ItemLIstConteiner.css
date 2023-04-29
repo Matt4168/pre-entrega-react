@@ -1,0 +1,7 @@
+.saludo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 4rem;
+    color: rgb(90, 9, 167);
+}

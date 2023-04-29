@@ -1,0 +1,7 @@
+.carrito{
+    display: flex;
+}
+.contador{
+    font-size: 1rem;
+    color: white;
+}
