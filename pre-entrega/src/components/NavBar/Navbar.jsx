@@ -1,5 +1,7 @@
 import React from 'react'
-import Cart from '../cart/cart'
+import Cart from '../cart/CartWidget'
+import { NavLink, Link } from "react-router-dom"
+
 function Navbar() {
     const logo = "../src/assets/images/logo.png"
   return (
@@ -11,21 +13,21 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <img src={logo} alt="logo" height="50px" />
+        <Link to={"/"}>
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="./index.html">VynilManiac</a>
         </li>
+        </Link>
+        <Link to="/categoria/2">
         <li className="nav-item">
-          <a className="nav-link" href="./pages/listado.html">Tienda</a>
+          <a className="nav-link" href="./pages/listado.html">Rock</a>
         </li>
+        </Link>
+        <Link to="/categoria/1">
         <li className="nav-item">
-          <a className="nav-link" href="./pages/comienzo.html">Como Empezar</a>
+          <a className="nav-link" href="./pages/comienzo.html">Pop/R&B</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="./pages/cuidado.html">Cuidados</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="./pages/contacto.html">Contacto</a>
-        </li>
+        </Link>
         <Cart /></ul></div>
   </div>
 </nav>
