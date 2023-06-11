@@ -11,11 +11,11 @@ const Item = ({id, nombre, precio, img}) => {
       <div className="card-body">
         <h5 className="card-title">{nombre}</h5>
         <h5 className="card-title">ID:{id}</h5>
-        <p className="card-text">{precio}</p>
-        <button id="${disco.id}" className="btn btn-primary">Comprar</button>
+        <p className="card-text">${precio}</p>
+        
       </div>
-    </div>
-        <Link to={`/item/${id}`}> Ver Detalles</Link>
+    </div >
+        <Link className='btn btn-primary' to={`/item/${id}`}> Ver Detalles</Link>
     </div>
     </div>
 
